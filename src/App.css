@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+form {
+  margin: 0 auto;
+  max-width: 320px;
+  width: 80%;
+}
+
+.loading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.spinner {
+  animation: spin 1s infinite linear;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.08);
+  border-bottom-color: #fff;
+  height: 40px;
+  width: 40px;
+}
+
+.field {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.field:last-of-type {
+  margin: 16px 0;
+}
+
+input {
+  height: 40px;
+  padding: 8px;
+  width: 100%;
+}
+
+pre {
+  background-color: rgba(0 ,0, 0, 0.24);
+  font-family: 'IBM Plex Mono', 'Roboto Mono', 'Monaco', monospace;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 3.2rem;
+  text-align: left;
+  width: 100%;
+}
+
+.welcome {
+  margin-bottom: 64px;
+}
