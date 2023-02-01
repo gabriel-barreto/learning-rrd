@@ -1,6 +1,6 @@
 import localforage from 'localforage'
 import { RouteObject, useActionData, useLoaderData } from 'react-router-dom'
-import { delay, parseFormDataIntoObject } from './utils'
+import { delay, parseFormDataIntoObject } from '../utils'
 
 interface User {
   email: string

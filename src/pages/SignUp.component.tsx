@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Form, RouteObject } from 'react-router-dom';
-import { Loading } from './Loading.component';
+import { Loading } from '../components';
 
 function SignUp() {
   const [isLoading, setIsLoading] = useState(false)
